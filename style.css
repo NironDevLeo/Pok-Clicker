@@ -1,3 +1,6 @@
+html{
+    font-size: 10px;
+}
 body{
     height: 1000px;
     background-image: url(./fonts/images/fond-body.webp);
@@ -259,6 +262,7 @@ button{
     opacity: 0;
 }
 #divevo1{
+    padding: 2px;
     width: 60%;
     height: 120px;
     margin-bottom: 40px;
@@ -269,12 +273,16 @@ button{
     border-radius: 20px;
 }
 #divevo2{
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     background-color: white;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
+}
+.textEvo{
+    margin-left: 10px;
+    font-size: 2rem;
 }
 @keyframes arrivagemainevo {
     0%{

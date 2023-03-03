@@ -518,7 +518,7 @@ function increaseScore() { //fonction qui augmente la puissance du click
 function increaseMultiplier() {   //fonction  ;  
   score -= multiplierCost;        //déduis le prix de l'amélioration
   multiplier += 1;                //augmente les dégats de 1 ;
-  clickValue = multiplier;        //valeur du click deviens pareil que les dégats ; 
+  clickValue = multiplier;        //valeur du click deviens pareil que les dégats
   multiplierCost *= multiplier;   //le prix de l'amélioration se multiplie par les dégats
   buttonsEnabler();                   //fonction qui creer l'évenement du bouton 
   displayScore();                     //fonction pour montrer mon score
@@ -591,7 +591,7 @@ function bonusmultiplier(){
 // Evolution du pokemon: cout 50 000 et dégats x20
 
 var evolution = document.getElementById('evolution');
-var prix1 = 50000
+var prix1 = 1000 //<===Changer la valeur
 
 function evolution1(){
     if (score >= prix1) {
@@ -642,10 +642,10 @@ button.addEventListener('click',()=>{
   annimationTexteEvolution();
   setTimeout(()=> {
     text1evo.style.display = "none";
-  }, "16990");
+  }, "16000");
   setTimeout(()=> {
     annimationTexteEvolution2();
-  }, "16990");
+  }, "16000");
   setTimeout(()=> {
     mainevo.style.display = "none";
   }, "24700");
